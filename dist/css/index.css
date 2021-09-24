@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .navbar {
   width: 100%;
   height: 100px;
@@ -5,30 +6,89 @@
 }
 
 #LandSection {
-  height: 900px;
-}
-
-body {
-  height: 3153px;
-}
-body .background {
   position: relative;
-  width: 100vw;
-  height: 900px;
-}
-body .background img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 900px;
+  background-image: url(http://127.0.0.1:5500/img/BackGroun.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-body .background svg {
+#LandSection .navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#LandSection .navbar .nav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#LandSection .navbar .nav_brand {
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+#LandSection .navbar .nav_brand .letters {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#LandSection .navbar .nav_brand .letters p {
+  margin-left: 5px;
+}
+#LandSection .navbar .nav .info {
+  display: flex;
+}
+#LandSection .navbar .nav .info button {
+  background: linear-gradient(90deg, #FFFFFF 0%, #F1FAFF 100%);
+  box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6F6F6F;
+  width: 180px;
+  height: 56px;
+  border: 0;
+  filter: drop-shadow(0px 4px 50px rgba(77, 107, 185, 0.15));
+}
+#LandSection .navbar .nav .info nav {
+  margin-right: 50px;
+}
+#LandSection .navbar .nav .info nav ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#LandSection .navbar .nav .info nav ul li {
+  list-style: none;
+  margin-left: 45px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+#LandSection > svg {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: auto;
   z-index: 99;
+}
+
+body {
+  height: 3153px;
 }
 
 * {
